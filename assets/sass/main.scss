@@ -4,12 +4,6 @@
 @import url('font-awesome.min.css');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 	@import "libs/skel";
 
 	@include skel-breakpoints((
@@ -42,8 +36,6 @@
 
 	$size-header-width: 35%;
 	$size-header-pad: 4em;
-
-/* Basic */
 
 	body {
 		background: _palette(bg);
@@ -148,7 +140,6 @@
 		border: 0;
 		border-bottom: solid 2px _palette(border);
 
-		// This is the *only* instance where we need to rely on margin collapse.
 		margin: _size(element-margin) 0;
 
 		&.major {
@@ -199,7 +190,7 @@
 		text-align: right;
 	}
 
-/* Section/Article */
+
 
 	section, article {
 		&.special {
@@ -241,7 +232,7 @@
 		}
 	}
 
-/* Form */
+
 
 	form {
 		margin: 0 0 _size(element-margin) 0;
@@ -409,7 +400,7 @@
 		opacity: 1.0;
 	}
 
-/* Box */
+
 
 	.box {
 		border-radius: _size(border-radius);
@@ -430,7 +421,7 @@
 		}
 	}
 
-/* Icon */
+
 
 	.icon {
 		@include icon;
@@ -442,7 +433,7 @@
 		}
 	}
 
-/* Image */
+
 
 	.image {
 		border-radius: _size(border-radius);
@@ -550,7 +541,7 @@
 		}
 	}
 
-/* List */
+
 
 	ol {
 		list-style: decimal;
@@ -714,7 +705,7 @@
 		margin: 0 0 _size(element-margin) 0;
 	}
 
-/* Table */
+
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -790,7 +781,7 @@
 		}
 	}
 
-/* Button */
+
 
 	input[type="submit"],
 	input[type="reset"],
@@ -873,7 +864,7 @@
 		}
 	}
 
-/* Work Item */
+
 
 	.work-item {
 		margin: 0 0 _size(element-margin) 0;
@@ -894,7 +885,7 @@
 		}
 	}
 
-/* Header */
+
 
 	#header {
 		background-color:		_palette(accent2, bg);
@@ -933,7 +924,7 @@
 		}
 	}
 
-/* Footer */
+
 
 	#footer {
 		bottom: 0;
@@ -978,7 +969,7 @@
 		}
 	}
 
-/* Main */
+
 
 	#main {
 		margin-left: $size-header-width;
@@ -999,7 +990,7 @@
 		}
 	}
 
-/* Poptrox */
+
 
 	@include keyframes('spin') {
 		0% { @include vendor('transform', 'rotate(0deg)'); }
@@ -1142,7 +1133,7 @@
 		}
 	}
 
-/* Touch */
+
 
 	body.is-touch {
 
@@ -1173,11 +1164,11 @@
 
 	}
 
-/* XLarge */
+
 
 	@include breakpoint(xlarge) {
 
-		/* Basic */
+
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -1185,14 +1176,14 @@
 
 	}
 
-/* Large */
+
 
 	@include breakpoint(large) {
 
 		$size-header-width: 30%;
 		$size-header-pad: 3em;
 
-		/* Header */
+
 
 			#header {
 				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
@@ -1207,7 +1198,7 @@
 				}
 			}
 
-		/* Footer */
+
 
 			#footer {
 				padding: 0 $size-header-pad ($size-header-pad + _size(element-margin)) $size-header-pad;
@@ -1224,7 +1215,7 @@
 				}
 			}
 
-		/* Main */
+
 
 			#main {
 				margin-left: $size-header-width;
@@ -1235,13 +1226,13 @@
 
 	}
 
-/* Medium */
+
 
 	@include breakpoint(medium) {
 
 		$size-header-pad: 4em;
 
-		/* Basic */
+
 
 			h1, h2, h3, h4, h5, h6 {
 				br {
@@ -1249,7 +1240,7 @@
 				}
 			}
 
-		/* List */
+
 
 			ul {
 				&.icons {
@@ -1261,7 +1252,7 @@
 				}
 			}
 
-		/* Header */
+
 
 			#header {
 				background-attachment:	scroll;
@@ -1283,7 +1274,7 @@
 				}
 			}
 
-		/* Footer */
+
 
 			#footer {
 				background-attachment:	scroll;
@@ -1316,7 +1307,7 @@
 				}
 			}
 
-		/* Main */
+
 
 			#main {
 				margin: 0;
@@ -1326,13 +1317,13 @@
 
 	}
 
-/* Small */
+
 
 	@include breakpoint(small) {
 
 		$size-header-pad: 1.5em;
 
-		/* Basic */
+
 
 			h1 {
 				font-size: 1.5em;
@@ -1346,7 +1337,7 @@
 				font-size: 1em;
 			}
 
-		/* Section/Article */
+
 
 			section, article {
 				&.special {
@@ -1362,7 +1353,7 @@
 				}
 			}
 
-		/* List */
+
 
 			ul {
 				&.labeled-icons {
@@ -1376,7 +1367,7 @@
 				}
 			}
 
-		/* Header */
+
 
 			#header {
 				padding: ($size-header-pad * 1.5) $size-header-pad;
@@ -1386,13 +1377,13 @@
 				}
 			}
 
-		/* Footer */
+
 
 			#footer {
 				padding: ($size-header-pad * 1.5) $size-header-pad;
 			}
 
-		/* Main */
+
 
 			#main {
 				padding: ($size-header-pad * 1.5) $size-header-pad (($size-header-pad * 1.5) - _size(element-margin)) $size-header-pad;
@@ -1403,7 +1394,7 @@
 				}
 			}
 
-		/* Poptrox */
+
 
 			.poptrox-popup {
 				border-radius: 0;
@@ -1418,13 +1409,13 @@
 
 	}
 
-/* XSmall */
+
 
 	@include breakpoint(xsmall) {
 
 		$size-header-pad: 1.5em;
 
-		/* List */
+
 
 			ul {
 				&.actions {
@@ -1464,7 +1455,7 @@
 				}
 			}
 
-		/* Header */
+
 
 			#header {
 				padding: ($size-header-pad * 3) $size-header-pad;
@@ -1476,7 +1467,7 @@
 				}
 			}
 
-		/* Footer */
+
 
 			#footer {
 				.copyright {

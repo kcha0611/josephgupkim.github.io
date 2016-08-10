@@ -3,13 +3,6 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Button */
 
 	input[type="submit"],
 	input[type="reset"],
@@ -18,8 +11,6 @@
 		position: relative;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
-
-/* Form */
 
 	input[type="text"],
 	input[type="password"],
@@ -47,8 +38,6 @@
 		}
 	}
 
-/* Image */
-
 	.image {
 		position: relative;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
@@ -63,8 +52,6 @@
 		}
 	}
 
-/* Header */
-
 	#header {
 		background-image: url('../../images/bg.jpg');
 		background-repeat: no-repeat;
@@ -75,8 +62,6 @@
 			color: _palette(accent2, fg-bold);
 		}
 	}
-
-/* Footer */
 
 	#footer {
 		.icons {
